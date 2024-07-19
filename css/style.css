@@ -1,0 +1,96 @@
+html, body {
+  height: 100%;
+  font-family: Roboto, sans-serif;
+}
+
+ /* Position banner in header */
+#header-background {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4),
+                                    rgba(0, 0, 0, 0.4)),
+                                    url(../images/banner.jpg); 
+  position: relative;                         
+  height: 42%;
+  background-position: center;
+}
+  
+/* Position text & logo in header */
+#header-content {
+  text-align: center;
+  color: burlywood;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Position search bar at bottom right of header */
+#header-search {
+  color: #f2f2f2;
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  padding-right: 1%;
+  padding-left:10%
+}
+
+/* Change button color */
+.btn, .btn:hover {
+  color: #f2f2f2;
+  background-color: burlywood;
+  border-color: burlywood;
+}
+
+/* Add background color to navigation bar  */
+#topnav {
+  background-color: burlywood;
+  overflow: hidden;
+}
+
+/* Style links in navigation bar */
+#topnav a {
+  color: #f2f2f2;
+  text-decoration: none;
+  float: left;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 6.7%;
+  padding-right: 6.7%;
+}
+
+/* Add colors to background & links of navigator bar on hover */
+#topnav a:hover {
+  background-color: #cccccc;
+  color: black;
+} 
+
+/* Style elements in footer */
+#footer {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.9),
+                    rgba(255, 255, 255, 0.9)),
+                    url(../images/footer.jpeg);
+  position: relative;
+  height: 12%;
+  background-position: center;
+  padding-left: 5%;
+}
+
+/* Style links in footer */
+#footer a {
+  color: #9a7b4f;
+  text-decoration: none;
+}
+
+/* Change color to links in footer on hover */
+#footer a:hover {
+  color: black;
+}
+
+/* Position subscription email at bottom right of footer */
+#footer-email {
+  color: #9a7b4f;
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  padding-right: 5%;
+  text-align: right;
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="description" content="This webpage highlights the events and promotions">
+        <meta charset="utf-8"
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Silent Library </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+              rel="stylesheet" 
+              integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+              crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <style>
+        /* Change background color & padding of content */
+        .row>[class^=col] {
+            background-color: #e8d5c3;
+            padding-top: 1%;
+        } 
+
+        /* Change h3 color */
+        h3 {
+            color: #9a7b4f;
+        }
+
+        /* Change caption color */
+        .caption {
+            color: #9a7b4f;
+        }
+
+        /* Change text color */
+        .card-text {
+            color: burlywood;
+        }
+    </style>
+
+    <body>
+        <!-- Common header -->
+        <div id="header-background"> 
+            <div id="header-content">
+                <h1><b> Silent Library </b></h1>
+                <h6><em> Your Gateway to Knowledge </em></h6>
+                <img src="images/logo.png" alt="Logo" height="100px">
+            </div>
+            <form action"#" method="get">
+                <p id="header-search"> 
+                    <b><label for="category"> Search by </label></b> 
+                    <select id="category" name="search-category" style="height:30px">
+                        <option value="all"> Please select </option>
+                        <option value="title"> Title </option>
+                        <option value="author"> Author </option>
+                        <option value="genre"> Genre </option>
+                    </select> 
+                    <input id="search" name="search" type="text">
+                    <button type="button" class="btn btn-sm" id="search-results"> Go </button>
+                </p>
+            </form>
+        </div>
+        <div id="topnav"> <!-- Top navigation bar -->
+            <a href="index.html"> Home </a>
+            <a href="about-us.html"> About Us </a>
+            <a href="books-list.html"> Books List </a>
+            <a href="events-promotions.html"> Events & Promotions </a>
+            <a href="contact-us.html"> Contact Us </a>
+        </div>
+
+        <!-- Main content -->
+        <div class="container">
+            <div class="row mt-2">
+                <div class="col-sm-4 border border-white border-5">
+                    <div class="card mb-4 shadow-sm rounded">
+                        <img class="card-img-top" id="storytime-for-toddlers" src="images/3a-storytime-for-toddlers.png" height="300px" width="200px" alt="Storytime for Toddlers">
+                        <div class="card-body">
+                            <h6 class="card-title"></h6><b> <span style="color: #9a7b4f"> Storytime for Toddlers </span> </b></h6>
+                            <p class="card-text"> 
+                                <br><b> Date: </b> Every Tuesday, 10.30 am - 11:00 am
+                                <br><b> Location: </b> Children's Section
+                                <br><b> Age Group: </b> 1 - 3 years old
+                                <br><br> Join us every Tuesday morning for a fun and engaging Storytime for Toddlers! This interactive event is designed to introduce young children to the joy of reading and foster a love of books from an early age. Our experienced children's librarians will lead the session with a variety of activities that are perfect for toddlers. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 border border-white border-5">
+                    <div class="card mb-4 shadow-sm rounded">
+                        <img class="card-img-top" id="book-author-talk" src="images/3b-book-author-talk.png" height="300px" width="200px" alt="Book Author Talk">
+                        <div class="card-body">
+                            <h6 class="card-title"></h6><b> <span style="color: #9a7b4f"> Book Author Talk </span> </b></h6>
+                            <p class="card-text">
+                                <br><b> Book Author: </b> Jane Smith
+                                <br><b> Date: </b> 22 July 2024
+                                <br><b> Time: </b> 6:00 pm - 7:30 pm
+                                <br><br> Join us for an exciting evening with bestselling author Jane Smith as she discusses her latest novel, "Whispers of the Past." This is a unique opportunity to gain insight into the creative process of a celebrated writer, ask questions and get your books signed. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 border border-white border-5">
+                    <div class="card mx-auto mb-4 shadow-sm rounded">
+                        <img class="card-img-top" id="library-fine-amnesty-month" src="images/3c-library-fine-amnesty-month.png" height="300px" width="200px" alt="Library Fine Amnesty Month">
+                        <div class="card-body">
+                            <h6 class="card-title"></h6><b> <span style="color: #9a7b4f"> Library Fine Amnesty Month </span> </b></h6>
+                            <p class="card-text">
+                                <br><b> Dates: </b> 1 - 31 August 2024
+                                <br><b> Location: </b> Library Main Counter
+                                <br><b> Cost: </b> Free
+                                <br><br> August is Library Fine Amnesty Month! This is your chance to return overdue library materials without having to pay any late fees. Whether you've been avoiding the library because of fines or simply forgot to return a book, we welcome you back with open arms. Take advantage of this special month-long event to clear your account. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Common footer -->
+        <div id="footer">
+            <a href="sitemap.html"> Sitemap </a>
+            <br><a href="privacy-policy.html"> Privacy Policy </a>
+            <form action"#" method="get">
+                <p id="footer-email"> 
+                    <label for="subscribe"> Subscribe to our mailing list </label>
+                    <br><input id="subscribe" name="email" type="email">
+                    <button type="button" class="btn btn-sm" id="email-subscription" onClick="alert('Thank you for subscribing!');"> Subscribe </button>
+                </p>
+            </form>
+        </div>
+
+        <!-- Toast message position for search-results -->
+        <div class="toast position-fixed bottom-50 start-50 translate-middle-x"> 
+            <!-- Toast message for search-results -->
+            <div id="search-results" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                    <strong class="me-auto"> We are so sorry! </strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+            <div class="toast-body">
+                We are experiencing heavy traffic to our services.
+                <br> Please try again later.
+            </div>
+        </div>
+
+        <!-- CDN script -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+        crossorigin="anonymous"></script>
+
+        <!-- Button script for search-results -->
+        <script>
+            document.getElementById("search-results").onclick = function () {
+                var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+                var toastList = toastElList.map(function (toastEl) {
+                    // Initialize & create an array of toasts
+                    return new bootstrap.Toast(toastEl) // No need for options; use the default options
+                });
+                toastList.forEach(toast => toast.show()); // Display the toast
+            };
+        </script>
+    </body>
+</html>

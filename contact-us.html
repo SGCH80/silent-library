@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="description" content="This webpage shows the library location as well as the enquiry/feedback form">
+        <meta charset="utf-8"
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Silent Library </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+              rel="stylesheet" 
+              integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+              crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <style>
+        /* Change background color & padding of content */
+        .row>[class^=col] {
+            background-color: #e8d5c3;
+            padding-top: 1%;
+        } 
+
+        /* Change caption color */
+        .caption {
+            color: #9a7b4f;
+        }
+    </style>
+
+    <body>
+        <!-- Common header -->
+        <div id="header-background"> 
+            <div id="header-content">
+                <h1><b> Silent Library </b></h1>
+                <h6><em> Your Gateway to Knowledge </em></h6>
+                <img src="images/logo.png" alt="Logo" height="100px">
+            </div>
+            <form action"#" method="get">
+                <p id="header-search"> 
+                    <b><label for="category"> Search by </label></b> 
+                    <select id="category" name="search-category" style="height:30px">
+                        <option value="all"> Please select </option>
+                        <option value="title"> Title </option>
+                        <option value="author"> Author </option>
+                        <option value="genre"> Genre </option>
+                    </select> 
+                    <input id="search" name="search" type="text">
+                    <button type="button" class="btn btn-sm" id="search-results"> Go </button>
+                </p>
+            </form>
+        </div>
+        <div id="topnav"> <!-- Top navigation bar -->
+            <a href="index.html"> Home </a>
+            <a href="about-us.html"> About Us </a>
+            <a href="books-list.html"> Books List </a>
+            <a href="events-promotions.html"> Events & Promotions </a>
+            <a href="contact-us.html"> Contact Us </a>
+        </div>
+
+        <!-- Main content -->
+        <div class="container">
+            <div class="row mt-2">
+                <div class="col-sm-4 border border-white border-5">
+                    <div class="caption ps-2">
+                        <b id="location"> Address </b> 
+                        <br> Eunos Rd 8 #07-02
+                        <br> Lifelong Learning Institute 
+                        <br> Singapore 408601
+                        <br><br><b> Opening Hours </b>
+                        <br> Monday to Sunday 9 am to 9 pm
+                        <br><br><b> Nearest MRT </b> 
+                        <br> Paya Lebar
+                        <br><br><b> Email </b>
+                        <br><a href="mailto:enquiry@mysilentlibrary.com"> enquiry@mysilentlibrary.com</mail></a>
+                    </div>
+                </div>
+                <div class="col sm-4 border border-white border-5">
+                    <p align="center" id="map"><img src="images/map.jpg" height="300px" width="300px" alt="Map of Silent Library"></p>   
+                </div>
+                <div class="col sm-4 border border-white border-5">
+                    <iframe class="d-block mx-auto" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.759719213374!2d103.88980307496571!3d1.319887298667596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da19149fe4a925%3A0x82606eb494fd093c!2sLithan%20Academy!5e0!3m2!1sen!2ssg!4v1720860276673!5m2!1sen!2ssg" 
+                            width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    
+                </div>
+            </div>
+            <div class="row mt-1">
+                <div class="col-xl-4 border border-white border-5">
+                    <div class="caption ps-2">
+                        <b id="form"> Enquiry / Feedback Form </b>
+                        <form action"#" method="get">
+                            <br><label for="name"> Name </label>
+                            <br><input id="name" type="text" name="name" size="30" required="">
+                            <br><label for="email"><br> Email Address </label>
+                            <br><input id="email" type="email" name="email" size="30" required="">
+                            <br><br><label for="phone"> Contact Number </label>
+                            <br><input id="phone" type="tel" name="phone" size="15">
+                            <br><br><label for="subscribe"> Type </label>
+                            <br><select id="subscribe" name="form-type" style="height:30px">
+                                <option value="type"> Please select </option>
+                                <option value="enquiry"> Enquiry </option>
+                                <option value="feedback"> Feedback </option>
+                            </select> 
+                            <br><br><label for="comments"> Comments </label>
+                            <br><textarea id="comments" name="comments" rows="10" cols="34"></textarea>
+                            <p align="left"><button type="button" class="btn btn-sm" id="form-submission"> Submit </button></p>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-xl-8 border border-white border-5">
+                    <div class="caption pt-3">
+                        <p align="center" id="layout"><img src="images/library-layout-1.jpeg" height="300px" alt="Layout of Silent Library"></p>   
+                        <br><p align="center" id="layout"><img src="images/library-layout-2.jpeg" height="300px" alt="Layout of Silent Library"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Common footer -->
+        <div id="footer">
+            <a href="sitemap.html"> Sitemap </a>
+            <br><a href="privacy-policy.html"> Privacy Policy </a>
+            <form action"#" method="get">
+                <p id="footer-email"> 
+                    <label for="subscribe"> Subscribe to our mailing list </label>
+                    <br><input id="subscribe" name="email" type="email">
+                    <button type="button" class="btn btn-sm" id="email-subscription" onClick="alert('Thank you for subscribing!');"> Subscribe </button>
+                </p>
+            </form>
+        </div>
+
+        <!-- Toast message position for form-submission -->
+        <div class="toast position-fixed bottom-50 start-50 translate-middle-x"> 
+            <!-- Toast message for form-submission -->
+            <div id="form-submission" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                    <strong class="me-auto"> Thank you for your comments! </strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+            <div class="toast-body">
+                We will get back to you within the next 3 working days.
+            </div>
+        </div>
+
+        <!-- CDN script -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+        crossorigin="anonymous"></script>
+
+        <!-- Button script for form-submission -->
+        <script>
+            document.getElementById("form-submission").onclick = function () {
+                var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+                var toastList = toastElList.map(function (toastEl) {
+                    // Initialize & create an array of toasts
+                    return new bootstrap.Toast(toastEl) // No need for options; use the default options
+                });
+                toastList.forEach(toast => toast.show()); // Display the toast
+            };
+        </script>
+    </body>
+</html>
